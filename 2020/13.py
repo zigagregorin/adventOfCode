@@ -30,10 +30,10 @@ if __name__ == '__main__':
 	#
 	# t1 = time.time()
 	# while True:
-	# 	for i, bus in enumerate(busses):
+	# 	for fileNumber, bus in enumerate(busses):
 	# 		if bus == 'x':
 	# 			continue
-	# 		if (currentTime + i) % int(bus) != 0:
+	# 		if (currentTime + fileNumber) % int(bus) != 0:
 	# 			break
 	# 	else:
 	# 		print(currentTime)
