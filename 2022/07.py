@@ -45,7 +45,7 @@ class Folder:
 
     def FolderSizesFill(self):
         if self.isFolder():
-            Folder.folderSizes.append(self.size())
+            self.__class__.folderSizes.append(self.size())
         for sub in self.subfolders.values():
             sub.FolderSizesFill()
 
@@ -62,11 +62,6 @@ class Folder:
 
     def isFolder(self):
         return self.selfSize == 0
-
-    def freeUpSpace(self, value):
-        for sub in self.subfolders.values():
-            pass
-
 
 
 def readout(f, currentFolder:Folder):
